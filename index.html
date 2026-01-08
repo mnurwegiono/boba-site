@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>BobaKita - Nge-Boba Asik!</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ff6699",
+                        "primary-dark": "#e64d80",
+                        "background-light": "#f8f5f6",
+                        "background-dark": "#230f16",
+                        "text-main": "#1d0c12",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"],
+                        "body": ["Plus Jakarta Sans", "sans-serif"],
+                    },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "2xl": "2rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom scrollbar for horizontal scrolling */
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-main dark:text-white transition-colors duration-200">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<!-- Navigation -->
+<header class="sticky top-0 z-50 w-full backdrop-blur-md bg-background-light/90 dark:bg-background-dark/90 border-b border-primary/20">
+<div class="px-4 md:px-10 lg:px-40 py-4 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="size-10 bg-primary/20 rounded-full flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-2xl">local_drink</span>
+</div>
+<h2 class="text-xl font-bold tracking-tight text-text-main dark:text-white">BobaKita</h2>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Beranda</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Menu</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Promo</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Lokasi</a>
+</nav>
+<button class="bg-primary hover:bg-primary-dark text-white text-sm font-bold px-6 py-2.5 rounded-xl transition-all shadow-lg shadow-primary/25 active:scale-95">
+                    Pesan Online
+                </button>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="w-full px-4 md:px-10 lg:px-40 py-12 md:py-20 flex flex-col items-center">
+<div class="max-w-6xl w-full">
+<div class="flex flex-col-reverse lg:flex-row gap-12 items-center">
+<!-- Hero Content -->
+<div class="flex-1 flex flex-col gap-6 text-center lg:text-left items-center lg:items-start">
+<span class="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider">
+                            Freshly Brewed Happiness
+                        </span>
+<h1 class="text-4xl md:text-5xl lg:text-6xl font-black leading-[1.1] tracking-tight text-text-main dark:text-white">
+                            Nge-Boba Asik,<br/>
+<span class="text-primary">Harga Gak Bikin Panik!</span>
+</h1>
+<p class="text-base md:text-lg text-gray-600 dark:text-gray-300 max-w-lg leading-relaxed">
+                            Minuman favorit anak sekolah &amp; kuliah. Segernya bikin semangat belajar balik lagi, dompet tetep aman.
+                        </p>
+<div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto mt-2">
+<button class="bg-primary hover:bg-primary-dark text-white text-base font-bold px-8 py-3 rounded-xl transition-all shadow-xl shadow-primary/30 active:scale-95 flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[20px]">shopping_cart</span>
+                                Cobain Sekarang
+                            </button>
+<button class="bg-white dark:bg-white/10 border border-gray-200 dark:border-white/10 hover:bg-gray-50 dark:hover:bg-white/20 text-text-main dark:text-white text-base font-bold px-8 py-3 rounded-xl transition-all active:scale-95">
+                                Lihat Menu
+                            </button>
+</div>
+</div>
+<!-- Hero Image -->
+<div class="flex-1 w-full relative">
+<div class="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-tr from-primary/30 to-purple-400/20 rounded-full blur-3xl opacity-60"></div>
+<div class="relative w-full aspect-square md:aspect-[4/3] lg:aspect-square rounded-3xl overflow-hidden shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-500">
+<div class="w-full h-full bg-cover bg-center" data-alt="Refreshing brown sugar boba milk tea with tapioca pearls and ice in a plastic cup" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA0-ZHvJlqi8pplBAdAlqOHdM0baAGKrnLCo8iRIllxnWXOm4aIhMu-YTmOAwSTPOWV_zdrC2vVxws__-v_LED7ywxuV1qxs4GeSnAyFPnQ1KznnzeI-uyaII4XluHbfFssmvEgO7gYHK_COvzgx-8jfuZlYt9mT78RGOvTttubhA33ld51RYOB9yD2hIvwKxtSpwyMKx1_2DMU4P00PuY-WrY4ik0SLdJtrAjhkJxcmQDN1r7SgSkzTqrCjDgZOP4RVt1GeScVlOcf');"></div>
+</div>
+<!-- Floating Badge -->
+<div class="absolute -bottom-6 -right-6 md:bottom-10 md:-left-10 bg-white dark:bg-gray-800 p-4 rounded-2xl shadow-xl flex items-center gap-3 animate-bounce" style="animation-duration: 3s;">
+<div class="size-10 bg-yellow-100 dark:bg-yellow-900/30 rounded-full flex items-center justify-center text-yellow-600">
+<span class="material-symbols-outlined">star</span>
+</div>
+<div>
+<p class="text-sm font-bold text-text-main dark:text-white">Rating 4.9/5</p>
+<p class="text-xs text-gray-500 dark:text-gray-400">Dari 2k+ Pelajar</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Features Section -->
+<section class="w-full px-4 md:px-10 lg:px-40 py-16 bg-white dark:bg-white/5 rounded-t-[3rem]">
+<div class="max-w-6xl mx-auto flex flex-col gap-12">
+<div class="flex flex-col md:flex-row justify-between items-end gap-6">
+<div class="max-w-2xl">
+<h2 class="text-3xl md:text-4xl font-bold mb-4 text-text-main dark:text-white">Kenapa Harus BobaKita?</h2>
+<p class="text-lg text-gray-600 dark:text-gray-300">Bukan cuma soal rasa, tapi soal gaya hidup hemat tapi nikmat! Kita ngerti banget kebutuhan kamu.</p>
+</div>
+<a class="text-primary font-bold hover:underline flex items-center gap-1" href="#">
+                        Lihat Menu Lengkap <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Feature 1 -->
+<div class="group p-6 rounded-2xl border border-gray-100 dark:border-white/10 bg-background-light dark:bg-background-dark hover:border-primary/50 transition-colors">
+<div class="size-12 rounded-xl bg-green-100 text-green-600 dark:bg-green-900/30 dark:text-green-400 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">account_balance_wallet</span>
+</div>
+<h3 class="text-xl font-bold mb-2 text-text-main dark:text-white">Dompet Aman</h3>
+<p class="text-gray-600 dark:text-gray-400">Harga mulai 10rb-an, pas banget buat uang jajan kamu tanpa perlu puasa besoknya.</p>
+</div>
+<!-- Feature 2 -->
+<div class="group p-6 rounded-2xl border border-gray-100 dark:border-white/10 bg-background-light dark:bg-background-dark hover:border-primary/50 transition-colors">
+<div class="size-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">icecream</span>
+</div>
+<h3 class="text-xl font-bold mb-2 text-text-main dark:text-white">Topping Brutal</h3>
+<p class="text-gray-600 dark:text-gray-400">Gak pelit boba, puddingnya lembut, cheesenya lumer banget di mulut.</p>
+</div>
+<!-- Feature 3 -->
+<div class="group p-6 rounded-2xl border border-gray-100 dark:border-white/10 bg-background-light dark:bg-background-dark hover:border-primary/50 transition-colors">
+<div class="size-12 rounded-xl bg-purple-100 text-purple-600 dark:bg-purple-900/30 dark:text-purple-400 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">photo_camera</span>
+</div>
+<h3 class="text-xl font-bold mb-2 text-text-main dark:text-white">Tempat Cozy</h3>
+<p class="text-gray-600 dark:text-gray-400">Spot foto aesthetic, wifi kenceng, pas buat nugas atau mabar bareng squad.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Social Proof / Testimonials -->
+<section class="w-full px-4 md:px-10 lg:px-40 py-20 bg-background-light dark:bg-background-dark relative overflow-hidden">
+<!-- Background Blobs -->
+<div class="absolute top-0 right-0 -translate-y-1/2 w-64 h-64 bg-primary/10 rounded-full blur-3xl"></div>
+<div class="absolute bottom-0 left-0 translate-y-1/2 w-96 h-96 bg-blue-400/10 rounded-full blur-3xl"></div>
+<div class="max-w-6xl mx-auto relative z-10">
+<div class="text-center mb-12">
+<h2 class="text-3xl md:text-4xl font-bold text-text-main dark:text-white mb-3">Kata Mereka Yang Udah Nyobain</h2>
+<p class="text-gray-600 dark:text-gray-400">Jangan percaya kita, percaya kata temen-temen kamu aja.</p>
+</div>
+<div class="flex overflow-x-auto hide-scrollbar pb-8 -mx-4 px-4 snap-x snap-mandatory">
+<div class="flex gap-6">
+<!-- Testimonial 1 -->
+<div class="min-w-[280px] md:min-w-[320px] snap-center bg-white dark:bg-white/5 p-4 rounded-2xl shadow-sm border border-gray-100 dark:border-white/5 flex flex-col gap-4">
+<div class="w-full aspect-[4/3] rounded-xl overflow-hidden bg-gray-200 relative">
+<div class="w-full h-full bg-cover bg-center hover:scale-105 transition-transform duration-500" data-alt="Asian high school student smiling holding a drink" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAhtSxObiFjNgXiBRnZ7c38VZiYYQ1JoZpG44zg0lQWNt-SrYhQdlZSGuKLQEN8phuzbNEJGz-caoe_EjO0SMQtOva0Dig7gQxs8l0ist6argchOW27IaWFm28BxsoC_v1dNapqhnG-9kC32JKCZzBqwXRjSZyNMr7ZGe5WZbbGZ90hWlGMFDA2GaiTpanddomVSURo60x8jKDyGsa9nrQcJCIgQh-ekRZ9AK_mXdjLBXjYsIAPVUjJVhRmu_uf_PpSDYNT17DgDeTO');"></div>
+<div class="absolute top-2 right-2 bg-white/90 dark:bg-black/50 backdrop-blur-sm p-1 rounded-full">
+<span class="material-symbols-outlined text-yellow-500 text-sm">star</span>
+</div>
+</div>
+<div class="flex flex-col">
+<p class="text-text-main dark:text-white font-bold text-lg">Sinta, SMA 1</p>
+<p class="text-primary text-sm font-medium mb-2">Varian: Brown Sugar Boba</p>
+<p class="text-gray-600 dark:text-gray-300 text-sm italic">"Rasanya pas, gak bikin serik di tenggorokan! Harganya masuk akal banget buat kantong pelajar."</p>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="min-w-[280px] md:min-w-[320px] snap-center bg-white dark:bg-white/5 p-4 rounded-2xl shadow-sm border border-gray-100 dark:border-white/5 flex flex-col gap-4">
+<div class="w-full aspect-[4/3] rounded-xl overflow-hidden bg-gray-200 relative">
+<div class="w-full h-full bg-cover bg-center hover:scale-105 transition-transform duration-500" data-alt="Group of university students studying together in a cafe" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBnn92o2jtBPQMJQWHM-qmJQ8Wqc2C5_nR3OpgIAJpgq0gJiZS4jigJkl6M73qSxWOlrQYEwdwPmwT_wvjtNKJGDgYwA_MntynEHeccZkgY8MYJwDqqZD-dsdUadlMV2rm7m40n6utEUr2tF4_RKm236zoGe94rNgTOH0SWJu43v9X5JYvQ1L5NRQ7tJkJ_aiOn5Q4srovsDXwIKHQJjhe7878g731AISvMkMCZlGE3ECsGZSM0LRj9M9kHCBAqknWGGlaQ4CPOxecm');"></div>
+<div class="absolute top-2 right-2 bg-white/90 dark:bg-black/50 backdrop-blur-sm p-1 rounded-full">
+<span class="material-symbols-outlined text-yellow-500 text-sm">star</span>
+</div>
+</div>
+<div class="flex flex-col">
+<p class="text-text-main dark:text-white font-bold text-lg">Raka, Mahasiswa</p>
+<p class="text-primary text-sm font-medium mb-2">Varian: Taro Milk Tea</p>
+<p class="text-gray-600 dark:text-gray-300 text-sm italic">"Tempat nugas favorit, wifinya kenceng pol. Boba-nya chewy, gak keras sama sekali."</p>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="min-w-[280px] md:min-w-[320px] snap-center bg-white dark:bg-white/5 p-4 rounded-2xl shadow-sm border border-gray-100 dark:border-white/5 flex flex-col gap-4">
+<div class="w-full aspect-[4/3] rounded-xl overflow-hidden bg-gray-200 relative">
+<div class="w-full h-full bg-cover bg-center hover:scale-105 transition-transform duration-500" data-alt="Group of friends hanging out and laughing" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC-IAILtJOjB2Ac5pLUckUHMZ5RqjIA9YWTZrbPECA7f7g3zLRJ5OAQTBgMtO7DIR4-AhdDtSizzDjhjBjq42NtJZz-rYFQT4iG6MBmq-cdO6zEywGfdk31K4_nr0jU5xbKlHeTYA2Fa4KzaYI0sJ05Pc-UIVHgsryS9Dji6TBAljp4DQw2_6VpZGJXwzZvXE6JaZHsjVAEajDHLlsqHB8tGZgqZumnxzHK9YOVyuPo1goiavnq4gPFBdK__X-rh1E2T5hkYYeJh_qt');"></div>
+<div class="absolute top-2 right-2 bg-white/90 dark:bg-black/50 backdrop-blur-sm p-1 rounded-full">
+<span class="material-symbols-outlined text-yellow-500 text-sm">star</span>
+</div>
+</div>
+<div class="flex flex-col">
+<p class="text-text-main dark:text-white font-bold text-lg">Geng Mawar</p>
+<p class="text-primary text-sm font-medium mb-2">Varian: Paket Rame-Rame</p>
+<p class="text-gray-600 dark:text-gray-300 text-sm italic">"Murah banget buat patungan sama temen-temen. Sering ada promo buy 1 get 1 juga!"</p>
+</div>
+</div>
+<!-- Testimonial 4 -->
+<div class="min-w-[280px] md:min-w-[320px] snap-center bg-white dark:bg-white/5 p-4 rounded-2xl shadow-sm border border-gray-100 dark:border-white/5 flex flex-col gap-4">
+<div class="w-full aspect-[4/3] rounded-xl overflow-hidden bg-gray-200 relative">
+<div class="w-full h-full bg-cover bg-center hover:scale-105 transition-transform duration-500" data-alt="Close up of happy girl holding bubble tea" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBeXxgsw_fn1tWc64N_IQNDgWIH46V7bhTRSmcxLliZA098WtKG5F-5j5N2_Uli4mrCUCswx1hP9C2_jcBip96mAPDy2aIJ9NQ1V8i2eG4r-O5nzUShoOSob7IlFbAr_I0EtHR5v5ODX2UO6dTzP2Nrm8-e0iWYfKHW7A9K3vst3smtFYSyA0y2hwBLmoOshQeDXQaKl03dmPe2hqHE7O_VwAvcnx8mnBswpko1xh-3ztn9Ca99z1WBruOig63m5ehP9UbqOi037G6E');"></div>
+<div class="absolute top-2 right-2 bg-white/90 dark:bg-black/50 backdrop-blur-sm p-1 rounded-full">
+<span class="material-symbols-outlined text-yellow-500 text-sm">star</span>
+</div>
+</div>
+<div class="flex flex-col">
+<p class="text-text-main dark:text-white font-bold text-lg">Dina, Selebgram</p>
+<p class="text-primary text-sm font-medium mb-2">Varian: Matcha Cheese</p>
+<p class="text-gray-600 dark:text-gray-300 text-sm italic">"Jujurly ini enak banget sih, kejunya dapet banyak. Fix bakal balik lagi!"</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA & Footer -->
+<footer class="bg-primary/5 dark:bg-[#1a0b10] border-t border-primary/10">
+<div class="w-full px-4 md:px-10 lg:px-40 py-16">
+<div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-10">
+<!-- Brand & Info -->
+<div class="flex flex-col gap-4 text-center md:text-left">
+<div class="flex items-center justify-center md:justify-start gap-3">
+<div class="size-10 bg-primary text-white rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined">local_drink</span>
+</div>
+<h2 class="text-2xl font-bold text-text-main dark:text-white">BobaKita</h2>
+</div>
+<p class="text-gray-600 dark:text-gray-400 max-w-sm">
+                            Teman setia nugas dan nongkrong kamu. Buka setiap hari jam 10.00 - 22.00 WIB.
+                        </p>
+<div class="text-sm font-bold text-text-main dark:text-white mt-2">
+                            📍 Jl. Pelajar Pejuang No. 45, Bandung
+                        </div>
+</div>
+<!-- Contact Actions -->
+<div class="flex flex-col items-center md:items-end gap-6">
+<p class="text-lg font-bold text-text-main dark:text-white">Yuk, ngobrol sama admin!</p>
+<div class="flex gap-4">
+<a class="flex items-center gap-2 bg-[#25D366] text-white px-5 py-3 rounded-xl font-bold hover:brightness-110 transition-all active:scale-95 shadow-lg shadow-green-500/20" href="#">
+<span class="material-symbols-outlined">chat</span>
+                                WhatsApp
+                            </a>
+<a class="flex items-center gap-2 bg-gradient-to-tr from-[#f09433] via-[#dc2743] to-[#bc1888] text-white px-5 py-3 rounded-xl font-bold hover:brightness-110 transition-all active:scale-95 shadow-lg shadow-pink-500/20" href="#">
+<span class="material-symbols-outlined">photo_camera</span>
+                                Instagram
+                            </a>
+</div>
+</div>
+</div>
+<div class="max-w-6xl mx-auto mt-12 pt-8 border-t border-gray-200 dark:border-white/5 text-center text-sm text-gray-500">
+                    © 2023 BobaKita. All rights reserved. Design for Boba Lovers.
+                </div>
+</div>
+</footer>
+</div>
+</body></html>
